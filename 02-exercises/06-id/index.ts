@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 // In this exercise we implement the function "createId",
 // which creates and returns an universally unique
 // identifier.
@@ -15,10 +17,10 @@
  * Returns a UUID of version 4.
  */
 const createId = (): string => {
-    throw new Error("Not implemented")
-}
+  return uuidv4();
+};
 
-const id = createId()
-console.log(id) // XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (where X is a hexadecimal number)
+const id = createId();
+console.log(id); // XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (where X is a hexadecimal number)
 
-export {}
+export {};
